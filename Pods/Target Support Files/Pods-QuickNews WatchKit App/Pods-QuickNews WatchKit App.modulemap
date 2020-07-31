@@ -1,0 +1,6 @@
+framework module Pods_QuickNews_WatchKit_App {
+  umbrella header "Pods-QuickNews WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}

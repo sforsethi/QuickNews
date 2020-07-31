@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		700E80161928E5231C4D6240 /* Pods_QuickNews_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E79795C02B6D69583ACF0C2 /* Pods_QuickNews_WatchKit_Extension.framework */; };
+		A5492D18F493482FB3025501 /* Pods_QuickNews_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E33812E883E57A3AE05DA3B /* Pods_QuickNews_WatchKit_App.framework */; };
+		D06F2D54D80994E173F0C9CA /* Pods_QuickNews.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C98B3B32C99F306DBB592D6C /* Pods_QuickNews.framework */; };
+		D747629F24D35E67001F4A68 /* QuickNews WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D747629E24D35E67001F4A68 /* QuickNews WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D74762A524D35E67001F4A68 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74762A324D35E67001F4A68 /* Interface.storyboard */; };
+		D74762A724D35E6A001F4A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74762A624D35E6A001F4A68 /* Assets.xcassets */; };
+		D74762AE24D35E6A001F4A68 /* QuickNews WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D74762AD24D35E6A001F4A68 /* QuickNews WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D74762B324D35E6A001F4A68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762B224D35E6A001F4A68 /* ContentView.swift */; };
+		D74762B524D35E6A001F4A68 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762B424D35E6A001F4A68 /* HostingController.swift */; };
+		D74762B724D35E6A001F4A68 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762B624D35E6A001F4A68 /* ExtensionDelegate.swift */; };
+		D74762B924D35E6A001F4A68 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762B824D35E6A001F4A68 /* NotificationController.swift */; };
+		D74762BB24D35E6A001F4A68 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762BA24D35E6A001F4A68 /* NotificationView.swift */; };
+		D74762BD24D35E6C001F4A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74762BC24D35E6C001F4A68 /* Assets.xcassets */; };
+		D74762C024D35E6C001F4A68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74762BF24D35E6C001F4A68 /* Preview Assets.xcassets */; };
+		D74762D124D36049001F4A68 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762D024D36049001F4A68 /* ArticlesView.swift */; };
+		D74762D324D360DF001F4A68 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762D224D360DF001F4A68 /* Article.swift */; };
+		D74762D524D36406001F4A68 /* ArticleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762D424D36406001F4A68 /* ArticleRow.swift */; };
+		D74762D724D3663A001F4A68 /* ArticleFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762D624D3663A001F4A68 /* ArticleFetcher.swift */; };
+		D74762D924D36CAF001F4A68 /* ArticleDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74762D824D36CAF001F4A68 /* ArticleDetail.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D74762A024D35E67001F4A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D747629424D35E67001F4A68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D747629D24D35E67001F4A68;
+			remoteInfo = "QuickNews WatchKit App";
+		};
+		D74762AF24D35E6A001F4A68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D747629424D35E67001F4A68 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D74762AC24D35E6A001F4A68;
+			remoteInfo = "QuickNews WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D74762C824D35E6C001F4A68 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D74762AE24D35E6A001F4A68 /* QuickNews WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D74762CC24D35E6C001F4A68 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D747629F24D35E67001F4A68 /* QuickNews WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1E008F55C37E1F55422DCC41 /* Pods-QuickNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickNews.debug.xcconfig"; path = "Target Support Files/Pods-QuickNews/Pods-QuickNews.debug.xcconfig"; sourceTree = "<group>"; };
+		2D7BC539F46B6DCC6D264966 /* Pods-QuickNews WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickNews WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-QuickNews WatchKit Extension/Pods-QuickNews WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		3E79795C02B6D69583ACF0C2 /* Pods_QuickNews_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickNews_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E33812E883E57A3AE05DA3B /* Pods_QuickNews_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickNews_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6595323DCC9BEE23846C96CB /* Pods-QuickNews WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickNews WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-QuickNews WatchKit App/Pods-QuickNews WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		87D472CFB811E3C1FBAABB1F /* Pods-QuickNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickNews.release.xcconfig"; path = "Target Support Files/Pods-QuickNews/Pods-QuickNews.release.xcconfig"; sourceTree = "<group>"; };
+		C98B3B32C99F306DBB592D6C /* Pods_QuickNews.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuickNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3A914584FFC74C47B84536E /* Pods-QuickNews WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickNews WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-QuickNews WatchKit App/Pods-QuickNews WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		D747629A24D35E67001F4A68 /* QuickNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D747629E24D35E67001F4A68 /* QuickNews WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuickNews WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74762A424D35E67001F4A68 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D74762A624D35E6A001F4A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D74762A824D35E6A001F4A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D74762AD24D35E6A001F4A68 /* QuickNews WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "QuickNews WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D74762B224D35E6A001F4A68 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D74762B424D35E6A001F4A68 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		D74762B624D35E6A001F4A68 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D74762B824D35E6A001F4A68 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D74762BA24D35E6A001F4A68 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		D74762BC24D35E6C001F4A68 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D74762BF24D35E6C001F4A68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D74762C124D35E6C001F4A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D74762C224D35E6C001F4A68 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D74762D024D36049001F4A68 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		D74762D224D360DF001F4A68 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		D74762D424D36406001F4A68 /* ArticleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleRow.swift; sourceTree = "<group>"; };
+		D74762D624D3663A001F4A68 /* ArticleFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleFetcher.swift; sourceTree = "<group>"; };
+		D74762D824D36CAF001F4A68 /* ArticleDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetail.swift; sourceTree = "<group>"; };
+		DBC5984C74A1CEC0A43724DF /* Pods-QuickNews WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuickNews WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-QuickNews WatchKit Extension/Pods-QuickNews WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		953E6B3DBC083CF5510BCCB9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5492D18F493482FB3025501 /* Pods_QuickNews_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD96079CFEB9C9A42768B4D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06F2D54D80994E173F0C9CA /* Pods_QuickNews.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D74762AA24D35E6A001F4A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				700E80161928E5231C4D6240 /* Pods_QuickNews_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07065FF1CC93B4B394BEDB24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C98B3B32C99F306DBB592D6C /* Pods_QuickNews.framework */,
+				5E33812E883E57A3AE05DA3B /* Pods_QuickNews_WatchKit_App.framework */,
+				3E79795C02B6D69583ACF0C2 /* Pods_QuickNews_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D97F25AAF38905478C63AAF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E008F55C37E1F55422DCC41 /* Pods-QuickNews.debug.xcconfig */,
+				87D472CFB811E3C1FBAABB1F /* Pods-QuickNews.release.xcconfig */,
+				6595323DCC9BEE23846C96CB /* Pods-QuickNews WatchKit App.debug.xcconfig */,
+				D3A914584FFC74C47B84536E /* Pods-QuickNews WatchKit App.release.xcconfig */,
+				DBC5984C74A1CEC0A43724DF /* Pods-QuickNews WatchKit Extension.debug.xcconfig */,
+				2D7BC539F46B6DCC6D264966 /* Pods-QuickNews WatchKit Extension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D747629324D35E67001F4A68 = {
+			isa = PBXGroup;
+			children = (
+				D74762D424D36406001F4A68 /* ArticleRow.swift */,
+				D74762D624D3663A001F4A68 /* ArticleFetcher.swift */,
+				D74762D824D36CAF001F4A68 /* ArticleDetail.swift */,
+				D74762D024D36049001F4A68 /* ArticlesView.swift */,
+				D74762D224D360DF001F4A68 /* Article.swift */,
+				D74762A224D35E67001F4A68 /* QuickNews WatchKit App */,
+				D74762B124D35E6A001F4A68 /* QuickNews WatchKit Extension */,
+				D747629B24D35E67001F4A68 /* Products */,
+				3D97F25AAF38905478C63AAF /* Pods */,
+				07065FF1CC93B4B394BEDB24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D747629B24D35E67001F4A68 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D747629A24D35E67001F4A68 /* QuickNews.app */,
+				D747629E24D35E67001F4A68 /* QuickNews WatchKit App.app */,
+				D74762AD24D35E6A001F4A68 /* QuickNews WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D74762A224D35E67001F4A68 /* QuickNews WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D74762A324D35E67001F4A68 /* Interface.storyboard */,
+				D74762A624D35E6A001F4A68 /* Assets.xcassets */,
+				D74762A824D35E6A001F4A68 /* Info.plist */,
+			);
+			path = "QuickNews WatchKit App";
+			sourceTree = "<group>";
+		};
+		D74762B124D35E6A001F4A68 /* QuickNews WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D74762B224D35E6A001F4A68 /* ContentView.swift */,
+				D74762B424D35E6A001F4A68 /* HostingController.swift */,
+				D74762B624D35E6A001F4A68 /* ExtensionDelegate.swift */,
+				D74762B824D35E6A001F4A68 /* NotificationController.swift */,
+				D74762BA24D35E6A001F4A68 /* NotificationView.swift */,
+				D74762BC24D35E6C001F4A68 /* Assets.xcassets */,
+				D74762C124D35E6C001F4A68 /* Info.plist */,
+				D74762C224D35E6C001F4A68 /* PushNotificationPayload.apns */,
+				D74762BE24D35E6C001F4A68 /* Preview Content */,
+			);
+			path = "QuickNews WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D74762BE24D35E6C001F4A68 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D74762BF24D35E6C001F4A68 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D747629924D35E67001F4A68 /* QuickNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74762CD24D35E6C001F4A68 /* Build configuration list for PBXNativeTarget "QuickNews" */;
+			buildPhases = (
+				4A3AFA9E822A9CDB64B5F247 /* [CP] Check Pods Manifest.lock */,
+				D747629824D35E67001F4A68 /* Resources */,
+				D74762CC24D35E6C001F4A68 /* Embed Watch Content */,
+				AD96079CFEB9C9A42768B4D5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D74762A124D35E67001F4A68 /* PBXTargetDependency */,
+			);
+			name = QuickNews;
+			productName = QuickNews;
+			productReference = D747629A24D35E67001F4A68 /* QuickNews.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		D747629D24D35E67001F4A68 /* QuickNews WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74762C924D35E6C001F4A68 /* Build configuration list for PBXNativeTarget "QuickNews WatchKit App" */;
+			buildPhases = (
+				CF217B8427C74F831E1B1D0F /* [CP] Check Pods Manifest.lock */,
+				D747629C24D35E67001F4A68 /* Resources */,
+				D74762C824D35E6C001F4A68 /* Embed App Extensions */,
+				953E6B3DBC083CF5510BCCB9 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D74762B024D35E6A001F4A68 /* PBXTargetDependency */,
+			);
+			name = "QuickNews WatchKit App";
+			productName = "QuickNews WatchKit App";
+			productReference = D747629E24D35E67001F4A68 /* QuickNews WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D74762AC24D35E6A001F4A68 /* QuickNews WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D74762C524D35E6C001F4A68 /* Build configuration list for PBXNativeTarget "QuickNews WatchKit Extension" */;
+			buildPhases = (
+				B78167646F210B97441B7A67 /* [CP] Check Pods Manifest.lock */,
+				D74762A924D35E6A001F4A68 /* Sources */,
+				D74762AA24D35E6A001F4A68 /* Frameworks */,
+				D74762AB24D35E6A001F4A68 /* Resources */,
+				18AF99AFF976B4FBF799D050 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "QuickNews WatchKit Extension";
+			productName = "QuickNews WatchKit Extension";
+			productReference = D74762AD24D35E6A001F4A68 /* QuickNews WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D747629424D35E67001F4A68 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Raghav Sethi";
+				TargetAttributes = {
+					D747629924D35E67001F4A68 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D747629D24D35E67001F4A68 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					D74762AC24D35E6A001F4A68 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+				};
+			};
+			buildConfigurationList = D747629724D35E67001F4A68 /* Build configuration list for PBXProject "QuickNews" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D747629324D35E67001F4A68;
+			productRefGroup = D747629B24D35E67001F4A68 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D747629924D35E67001F4A68 /* QuickNews */,
+				D747629D24D35E67001F4A68 /* QuickNews WatchKit App */,
+				D74762AC24D35E6A001F4A68 /* QuickNews WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D747629824D35E67001F4A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D747629C24D35E67001F4A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D74762A724D35E6A001F4A68 /* Assets.xcassets in Resources */,
+				D74762A524D35E67001F4A68 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D74762AB24D35E6A001F4A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D74762C024D35E6C001F4A68 /* Preview Assets.xcassets in Resources */,
+				D74762BD24D35E6C001F4A68 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18AF99AFF976B4FBF799D050 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickNews WatchKit Extension/Pods-QuickNews WatchKit Extension-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuickNews WatchKit Extension/Pods-QuickNews WatchKit Extension-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuickNews WatchKit Extension/Pods-QuickNews WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A3AFA9E822A9CDB64B5F247 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickNews-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B78167646F210B97441B7A67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickNews WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF217B8427C74F831E1B1D0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuickNews WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D74762A924D35E6A001F4A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D74762D324D360DF001F4A68 /* Article.swift in Sources */,
+				D74762B524D35E6A001F4A68 /* HostingController.swift in Sources */,
+				D74762D724D3663A001F4A68 /* ArticleFetcher.swift in Sources */,
+				D74762D924D36CAF001F4A68 /* ArticleDetail.swift in Sources */,
+				D74762B324D35E6A001F4A68 /* ContentView.swift in Sources */,
+				D74762B924D35E6A001F4A68 /* NotificationController.swift in Sources */,
+				D74762D124D36049001F4A68 /* ArticlesView.swift in Sources */,
+				D74762B724D35E6A001F4A68 /* ExtensionDelegate.swift in Sources */,
+				D74762BB24D35E6A001F4A68 /* NotificationView.swift in Sources */,
+				D74762D524D36406001F4A68 /* ArticleRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D74762A124D35E67001F4A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D747629D24D35E67001F4A68 /* QuickNews WatchKit App */;
+			targetProxy = D74762A024D35E67001F4A68 /* PBXContainerItemProxy */;
+		};
+		D74762B024D35E6A001F4A68 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D74762AC24D35E6A001F4A68 /* QuickNews WatchKit Extension */;
+			targetProxy = D74762AF24D35E6A001F4A68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D74762A324D35E67001F4A68 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D74762A424D35E67001F4A68 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D74762C324D35E6C001F4A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D74762C424D35E6C001F4A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D74762C624D35E6C001F4A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBC5984C74A1CEC0A43724DF /* Pods-QuickNews WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QuickNews WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FXRA68KWM3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "QuickNews WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sforsethi.QuickNews.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		D74762C724D35E6C001F4A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D7BC539F46B6DCC6D264966 /* Pods-QuickNews WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"QuickNews WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = FXRA68KWM3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "QuickNews WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = sforsethi.QuickNews.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		D74762CA24D35E6C001F4A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6595323DCC9BEE23846C96CB /* Pods-QuickNews WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FXRA68KWM3;
+				IBSC_MODULE = QuickNews_WatchKit_Extension;
+				INFOPLIST_FILE = "QuickNews WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = sforsethi.QuickNews.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		D74762CB24D35E6C001F4A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3A914584FFC74C47B84536E /* Pods-QuickNews WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FXRA68KWM3;
+				IBSC_MODULE = QuickNews_WatchKit_Extension;
+				INFOPLIST_FILE = "QuickNews WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = sforsethi.QuickNews.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		D74762CE24D35E6C001F4A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E008F55C37E1F55422DCC41 /* Pods-QuickNews.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXRA68KWM3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sforsethi.QuickNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D74762CF24D35E6C001F4A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D472CFB811E3C1FBAABB1F /* Pods-QuickNews.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FXRA68KWM3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = sforsethi.QuickNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D747629724D35E67001F4A68 /* Build configuration list for PBXProject "QuickNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74762C324D35E6C001F4A68 /* Debug */,
+				D74762C424D35E6C001F4A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74762C524D35E6C001F4A68 /* Build configuration list for PBXNativeTarget "QuickNews WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74762C624D35E6C001F4A68 /* Debug */,
+				D74762C724D35E6C001F4A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74762C924D35E6C001F4A68 /* Build configuration list for PBXNativeTarget "QuickNews WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74762CA24D35E6C001F4A68 /* Debug */,
+				D74762CB24D35E6C001F4A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D74762CD24D35E6C001F4A68 /* Build configuration list for PBXNativeTarget "QuickNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D74762CE24D35E6C001F4A68 /* Debug */,
+				D74762CF24D35E6C001F4A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D747629424D35E67001F4A68 /* Project object */;
+}

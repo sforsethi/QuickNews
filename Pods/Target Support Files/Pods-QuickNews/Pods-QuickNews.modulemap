@@ -1,0 +1,6 @@
+framework module Pods_QuickNews {
+  umbrella header "Pods-QuickNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
